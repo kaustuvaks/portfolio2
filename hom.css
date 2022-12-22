@@ -40,9 +40,9 @@ html{
     justify-content: space-between;
 }
 
-/* section{
+section{
     height: 100vh;
-} */
+}
 
 section .title{
     position: relative;
