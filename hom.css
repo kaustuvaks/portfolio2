@@ -10,6 +10,9 @@ div a:hover{
     color: black;
 }
 
+.text-size{
+    font-size: 28px !important;
+}
 .sidenav {
     height: 100%;
     width: 0;
@@ -20,7 +23,7 @@ div a:hover{
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 10px;
 }
 
 .sidenav a {
@@ -44,7 +47,7 @@ div a:hover{
     margin-left: 50px;
 }
 
-div a:first-child{
+.sidenav a:first-child{
     color : mintcream;
 }
 @media screen and (max-height: 450px) {
