@@ -1,6 +1,7 @@
 // function check(){
 //     ch = false;
 // }
+let maxWidth = screen.width;
 let hamburgerClicked = false;
 const button = document.getElementById('hamburger');
 button.addEventListener("click", function openNav(){
