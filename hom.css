@@ -33,11 +33,21 @@ html{
     transform:translateY(0); transition: all 0.8s ease-in-out;
 }
 
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
 .frameattr{
     height:300px;
     width:300px;
 }
-.callout.projects {
+.callout.proj {
     background: url(./images/codimg.webp);
     background-attachment: fixed;
     -webkit-background-size: cover;
@@ -48,7 +58,20 @@ html{
     background-position: center center;
 }
 
-.projects {
+.callout.certs {
+    background: url(./images/prlx2.webp);
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+.proj {
     padding: 50px 0;
 }
 
@@ -360,12 +383,12 @@ section{
     background-color: black;;
   } */
   
-  .card__image {      
+.card__image {      
     width: 100%;
     height: auto;
-  }
-  
-  .card__overlay {
+}
+
+.card__overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -375,13 +398,13 @@ section{
     background-color: var(--surface-color);      
     transform: translateY(100%);
     transition: .2s ease-in-out;
-  }
-  
-  .card:hover .card__overlay {
+}
+
+.card:hover .card__overlay {
     transform: translateY(0);
-  }
-  
-  .card__header {
+}
+
+.card__header {
     position: relative;
     display: flex;
     align-items: center;
@@ -391,53 +414,53 @@ section{
     background-color: var(--surface-color);
     transform: translateY(-100%);
     transition: .2s ease-in-out;
-  }
-  
-  .card__arc {
+}
+
+.card__arc {
     width: 80px;
     height: 80px;
     position: absolute;
     bottom: 100%;
     right: 0;      
     z-index: 1;
-  }
-  
-  .card__arc path {
+}
+
+.card__arc path {
     fill: var(--surface-color);
     d: path('M 40 80 c 22 0 40 -22 40 -40 v 40 Z');
-  }       
-  
-  .card:hover .card__header {
+}       
+
+.card:hover .card__header {
     transform: translateY(0);
-  }
-  
-  .card__thumb {
+}
+
+.card__thumb {
     flex-shrink: 0;
     width: 50px;
     height: 50px;      
     border-radius: 50%;      
-  }
-  
-  .card__title {
+}
+
+.card__title {
     font-size: 1em;
     margin: 0 0 .3em;
     color: #6A515E;
-  }
-  
-  .card__tagline {
+}
+
+.card__tagline {
     display: block;
     margin: 1em 0;
     font-family: "MockFlowFont";  
     font-size: .8em; 
     color: #D7BDCA;  
-  }
-  
-  .card__status {
+}
+
+.card__status {
     font-size: .8em;
     color: #D7BDCA;
-  }
-  
-  .card__description {
+}
+
+.card__description {
     padding: 0 2em 2em;
     margin: 0;
     color: #D7BDCA;
@@ -446,24 +469,24 @@ section{
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
-  }    
-  .certificates .centering{
+}    
+.certificates .centering{
     display: flex;
-  }
+}
 
-  .certificates .extralink{
+.certificates .extralink{
     width: fit-content;
     border:2px solid crimson;
     padding:6px;
     border-radius:8px;
-  }
-  .certificates .extralink a{
+}
+.certificates .extralink a{
     color: crimson;
     text-decoration: none;
     font-family: "poppins"; 
     font-weight: 600;
-  }
-  .certificates .extralink:hover{
+}
+.certificates .extralink:hover{
     width: fit-content;
     background-color: crimson;
     color:white;
@@ -471,15 +494,73 @@ section{
     padding:6px;
     border-radius:8px;
     transition: all 0.3s ease;
-  }
-  .certificates .extralink a:hover{
+}
+.certificates .extralink a:hover{
     color: white;
     text-decoration: none;
     font-family: "poppins"; 
     font-weight: 600;
-  }
+}
 
-  .contact .title::after{
+
+
+.projects{
+    height: fit-content;
+    margin:20px;
+    padding:20px;
+}
+.projects .project-content{
+    display: grid;
+    gap:2em;
+    position: relative;
+    /* border: blue 5px solid; */
+}
+  
+.project {
+    /* border: red 5px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position:relative;
+}
+  
+  
+  /* 3 players: make the last one take two colums*/
+.project:nth-child(3):last-child {
+    grid-column: span 2;
+}
+  
+  
+  /* 4 players: make the fourth element in the second column */
+.project:nth-child(4) {
+    grid-column: 2;
+}
+
+.card-block {
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    border-top: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+     
+}
+.card {
+    font-size: 1em;
+    overflow: hidden;
+    padding: 5;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    margin-top:20px;
+}
+
+
+
+
+.contact .title::after{
     content: "get in touch";
 }
 .contact .contact-content .column{
@@ -612,7 +693,18 @@ section{
         justify-content: center;
         flex-direction: column;
     }
+     /* 3 players: make the last one take two colums*/
+    .project:nth-child(3):last-child {
+        grid-column: span 1;
+    }
+
+
+    /* 4 players: make the fourth element in the second column */
+    .project:nth-child(4) {
+        grid-column: 1;
+    }
 }
+
 
 @media(max-width:700px){
     .max-width{
@@ -633,6 +725,7 @@ section{
 }
 
 @media(max-width:400px){
+
     .certificates .cards{
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
         gap: 1rem;
