@@ -25,6 +25,42 @@ html{
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+.callout.projects {
+    background: url(./images/codimg.webp);
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.projects {
+    padding: 50px 0;
+}
+
+.callout {
+    color: #fff;
+    display: table;
+    height: 400px;
+    width: 100%;
+}
+
+.vert-text {
+    color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    opacity: .9;
+    font-size:100px;
+}
+
+.text-center{
+    text-align: center;
+    font-size: large;
+}
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -142,12 +178,13 @@ section{
 }
 .parallax {
     /* The image used */
-    background-image: url("./images/background2.webp");
+    /* background-image: url("./images/mt-sample-background.webp"); */
     
     /* Set a specific height */
     /* min-height: 500px;  */
     
     /* Create the parallax scrolling effect */
+    background-color: black;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -156,6 +193,28 @@ section{
     display: flex;
     align-items: center;
 }
+
+.text-about{
+    text-align: justify; 
+    text-justify: auto;
+}
+.about-me{
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-direction: row;
+}
+/* .about-me div h3 p{
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        text-align: justify;
+        text-justify: inter-word;
+} */
+
 
 .image-card{
     height: 150px;
