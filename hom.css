@@ -97,7 +97,7 @@ html{
     font-size: large;
 }
 .max-width{
-    max-width: 1336px;
+    max-width: 100%;
     padding: 0 80px;
     margin: auto;
 }
@@ -356,16 +356,6 @@ section{
     list-style-type:none;
 }
 
-/* .certificates .cards {
-    display: grid;
-    /* grid-row:1; */
-    /* grid-template-columns: repeat(1, minmax(300px, 3fr)); */
-    /* gap: 2rem;
-    margin: 4rem 0;
-    padding-top:60px;
-    list-style-type: none;
-} */ 
-
 .certificates .card {
     position: relative;
     display: block;
@@ -376,13 +366,6 @@ section{
     border:1px solid gray;
     background-color: black;
   }
-  /* .card .card__header{
-    background-color: black;
-  }
-
-  .card p{
-    background-color: black;;
-  } */
   
 .card__image {      
     width: 100%;
@@ -503,22 +486,17 @@ section{
     font-weight: 600;
 }
 
-
-
 .projects{
     height: fit-content;
-    /* margin:20px; */
     padding:20px;
 }
 .projects .project-content{
     display: grid;
     gap:2em;
     position: relative;
-    /* border: blue 5px solid; */
 }
   
 .project {
-    /* border: red 5px solid; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -526,14 +504,10 @@ section{
     position:relative;
 }
   
-  
-  /* 3 players: make the last one take two colums*/
 .project:nth-child(3):last-child {
     grid-column: span 2;
 }
-  
-  
-  /* 4 players: make the fourth element in the second column */
+
 .project:nth-child(4) {
     grid-column: 2;
 }
@@ -556,6 +530,16 @@ section{
     border-radius: .28571429rem;
     box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
     margin-top:20px;
+}
+
+.about-me-two{
+    height: fit-content;
+    background-color: #818181;
+}
+
+.about-sec-two{
+    display: flex;
+    flex-flow: row;
 }
 
 .contact .contact-content .column{
