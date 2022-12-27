@@ -6,6 +6,14 @@ navbar_height = document.querySelector('.navbar').offsetHeight;
 
 let hamburgerClicked = false;
 
+function refreshTime() {
+    const timeDisplay = document.getElementById("time");
+    const dateString = new Date().toLocaleString();
+    const formattedString = dateString.replace(", ", " - ");
+    timeDisplay.textContent = formattedString;
+}
+setInterval(refreshTime, 1000);
+
 const button = document.getElementById('hamburger');
 button.addEventListener("click", function openNav(){
     let maxWidth = screen.width;
@@ -13,7 +21,6 @@ button.addEventListener("click", function openNav(){
         document.getElementById("mySidenav").style.width = maxWidth+"px";
     }else{
         document.getElementById("mySidenav").style.width = "250px";
-
     } 
     if(!hamburgerClicked){
         closeNav();
@@ -59,15 +66,3 @@ function hiding(){
     // if
   
 }
-
-// window.onscroll = function() {
-//     var currentScrollPos = window.pageYOffset;
-  
-//     // 20 is an arbitrary number here, just to make you think if you need the prevScrollpos variable:
-//     if (currentScrollPos > 0) {
-//       // I am using 'display' instead of 'top':
-//       document.getElementById("nav-scroll").style.display = "none";
-//     } else {
-//       document.getElementById("nav-scroll").style.display = "initial";
-//     }
-// }

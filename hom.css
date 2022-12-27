@@ -27,12 +27,16 @@ html{
 }
 
 .scrolled-down{
-    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+    transform:translateY(-100%); transition: all 0.2s ease-in-out;
 }
 .scrolled-up{
-    transform:translateY(0); transition: all 0.3s ease-in-out;
+    transform:translateY(0); transition: all 0.8s ease-in-out;
 }
 
+.frameattr{
+    height:300px;
+    width:300px;
+}
 .callout.projects {
     background: url(./images/codimg.webp);
     background-attachment: fixed;
@@ -569,6 +573,17 @@ section{
 .right form .button-area button:hover{
   color: crimson;
   background: none;
+}
+
+@media(max-width:1147px){
+    
+    .parallax{
+        height: fit-content;
+    }
+    .about-me{
+        flex-direction: column;
+    }
+
 }
 
 
