@@ -4,6 +4,7 @@
 }
 html{
     scroll-behavior: smooth;
+    background-color:#212329;
 }
 *{
     margin: 0;
@@ -96,7 +97,7 @@ html{
     font-size: large;
 }
 .max-width{
-    max-width: 1300px;
+    max-width: 1336px;
     padding: 0 80px;
     margin: auto;
 }
@@ -138,7 +139,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: rgb(167, 78, 96);
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -506,7 +507,7 @@ section{
 
 .projects{
     height: fit-content;
-    margin:20px;
+    /* margin:20px; */
     padding:20px;
 }
 .projects .project-content{
@@ -557,12 +558,6 @@ section{
     margin-top:20px;
 }
 
-
-
-
-.contact .title::after{
-    content: "get in touch";
-}
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
@@ -763,3 +758,17 @@ section{
     .sidenav {padding-top: 20px;}
     .sidenav a {font-size: 36px;}
 }
+
+.animation-element.slide-left {
+    opacity: 0;
+    -moz-transition: all 500ms linear;
+    -webkit-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    transition: all 500ms linear;
+    -moz-transform: translate3d(-100px, 0px, 0px);
+    -webkit-transform: translate3d(-100px, 0px, 0px);
+    -o-transform: translate(-100px, 0px);
+    -ms-transform: translate(-100px, 0px);
+    transform: translate3d(-100px, 0px, 0px);
+}
+  
