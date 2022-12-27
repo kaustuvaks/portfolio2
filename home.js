@@ -1,9 +1,5 @@
 var prevScrollpos = window.pageYOffset;
 navbar_height = document.querySelector('.navbar').offsetHeight;
-// function check(){
-//     ch = false;
-// }
-
 let hamburgerClicked = false;
 
 function refreshTime() {
@@ -20,7 +16,7 @@ button.addEventListener("click", function openNav(){
     if(maxWidth<501){
         document.getElementById("mySidenav").style.width = maxWidth+"px";
     }else{
-        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("mySidenav").style.width = "300px";
     } 
     if(!hamburgerClicked){
         closeNav();
@@ -28,16 +24,9 @@ button.addEventListener("click", function openNav(){
     hamburgerClicked=!hamburgerClicked;
 });
 
-button.addEventListener("click", function(){
-    el_autohide = document.querySelector(".autohide");
-    el_autohide.classList.add('scrolled-down');
-});
-
-
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0px";
 }
-
 
 document.addEventListener("DOMContentLoaded", hiding());
 
@@ -45,7 +34,6 @@ function hiding(){
 
     el_autohide = document.querySelector(".autohide");
     navbar_height = document.querySelector('.navbar').offsetHeight;
-    // document.body.style.paddingTop = navbar_height + 'px';
   
     if(el_autohide){
         var last_scroll_top = 30;
@@ -62,10 +50,7 @@ function hiding(){
                 }
                 last_scroll_top = scroll_top;
         }); 
-      // window.addEventListener
     }
-    // if
-  
 }
 
 
