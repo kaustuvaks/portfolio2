@@ -821,7 +821,7 @@ hr {
 
 @media(max-width:1147px){
     
-    .parallax{
+    .parallax, .skills{
         height: fit-content;
     }
     .about-me{
@@ -868,7 +868,7 @@ hr {
 
 @media(max-width:700px){
     .max-width{
-        padding: 0 23px;
+        padding: 23px 0px;
     }
     .certificates .cards {
         display: grid;
