@@ -5,9 +5,55 @@ let maxWidth = screen.width;
 let maxOffsetWidth = window.offsetWidth;
 
 
-    if(maxWidth < 440){
-        document.getElementById("nav-scroll").style.width = (maxWidth)+"px";
+if(maxWidth < 440){
+    document.getElementById("nav-scroll").style.width = (maxWidth)+"px";
+}
+
+document.getElementById("abone").addEventListener("mouseenter", function(){
+    document.getElementById("abone").style.height = 187.5+"px";
+    document.getElementById("abtwo").style.height = 62.5+"px";
+    
+});
+document.getElementById("abone").addEventListener("mouseleave", function(){
+    document.getElementById("abone").style.height = 125+"px";
+    document.getElementById("abtwo").style.height = 125+"px";
+});
+
+document.getElementById("abtwo").addEventListener("mouseenter", function(){
+    document.getElementById("abone").style.height = 93.75+"px";
+    document.getElementById("abtwo").style.height = 187.5+"px";
+    document.getElementById("abthree").style.height = 93.75+"px";
+    
+});
+document.getElementById("abtwo").addEventListener("mouseleave", function(){
+    document.getElementById("abone").style.height = 125+"px";
+    document.getElementById("abtwo").style.height = 125+"px";
+    document.getElementById("abthree").style.height = 125+"px";
+});
+
+document.getElementById("abthree").addEventListener("mouseenter", function(){
+    document.getElementById("abthree").style.height = 187.5+"px";
+    document.getElementById("abtwo").style.height = 62.5+"px";
+    
+});
+document.getElementById("abthree").addEventListener("mouseleave", function(){
+    document.getElementById("abthree").style.height = 125+"px";
+    document.getElementById("abthree").style.height = 125+"px";
+});
+
+function coolcheck(){
+    let x1 = document.getElementById("abone").style.height;
+    let x2 = document.getElementById("abtwo").style.height;
+    let x3 = document.getElementById("abthree").style.height;
+
+    if(x1+x2+x3 <375){
+        document.getElementById("abone").style.height = 125+"px";
+        document.getElementById("abtwo").style.height = 125+"px";
+        document.getElementById("abthree").style.height = 125+"px";
     }
+}
+
+setInterval(coolcheck, 1000);
 
 function refreshTime() {
     const timeDisplay = document.getElementById("time");

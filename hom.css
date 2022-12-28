@@ -52,6 +52,23 @@ html{
   clear: both;
 }
 
+.shadow{
+    -webkit-box-shadow: 3px 9px 19px -3px rgba(62,103,144,1);
+    -moz-box-shadow: 3px 9px 19px -3px rgba(62,103,144,1);
+    box-shadow: 3px 9px 19px -3px rgba(62,103,144,1);
+}
+
+.mycol{
+    overflow: hidden;
+  transition: height 2s;
+  -moz-transition: height 2s;
+  /* Firefox 4 */
+  -webkit-transition: height 2s;
+  /* Safari and Chrome */
+  -o-transition: height 2s;
+  /* Opera */
+}
+
 .frameattr{
     height:300px;
     width:300px;
