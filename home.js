@@ -2,10 +2,11 @@ var prevScrollpos = window.pageYOffset;
 navbar_height = document.querySelector('.navbar').offsetHeight;
 let hamburgerClicked = false;
 let maxWidth = screen.width;
+let maxOffsetWidth = window.offsetWidth;
 
 
     if(maxWidth < 440){
-        document.getElementById("nav-scroll").style.width = maxWidth+"px";
+        document.getElementById("nav-scroll").style.width = (maxWidth)+"px";
     }
 
 function refreshTime() {
@@ -21,7 +22,7 @@ button.addEventListener("click", function openNav(){
     if(maxWidth<501){
         document.getElementById("mySidenav").style.width = maxWidth+"px";
     }else{
-        document.getElementById("mySidenav").style.width = "300px";
+        document.getElementById("mySidenav").style.width = "350px";
     } 
     if(!hamburgerClicked){
         closeNav();

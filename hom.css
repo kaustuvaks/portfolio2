@@ -232,7 +232,7 @@ div a:hover{
 }
 
 .sidenav .line {
-    width: 300px;
+    width: 350px;
     height: 0;
     border: 1px solid #C4C4C4;
     margin: 3px;
@@ -386,8 +386,8 @@ section{
     padding-top: 50px;
     padding-bottom:50px ;
     display: flex;
-    /* flex-direction: column;
-    justify-content: center; */
+    flex-direction: column;
+    justify-content: center;
 }
 .certificates .cards{
     display:flex;
@@ -496,9 +496,6 @@ section{
     -webkit-line-clamp: 3;
     overflow: hidden;
 }    
-.certificates .centering{
-    display: flex;
-}
 
 .certificates .extralink{
     width: fit-content;
@@ -883,27 +880,6 @@ hr {
     }
 }
 
-@media(max-width:400px){
-
-    .certificates .cards{
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-        gap: 1rem;
-        margin: 2rem 1em;
-        padding-top:60px;
-        list-style-type: none;
-    }
-    .card__header {
-        position: relative;
-        display: flex;
-        align-items: center;
-        gap: 1em;
-        padding: 1em;
-        border-radius: calc(var(--curve) * 1px) 0 0 0;    
-        background-color: var(--surface-color);
-        transform: translateY(-100%);
-        transition: .2s ease-in-out;
-    }
-}
 
 @media (max-height: 600px) {
     .sidenav {padding-top: 12px;}
@@ -936,9 +912,9 @@ hr {
     transform: translate3d(-100px, 0px, 0px);
 }
 
-@media(max-width:320px){
+/* @media(max-width:320px){
     .alt-send-button{
         width:300px;
     }
-}
+} */
   
