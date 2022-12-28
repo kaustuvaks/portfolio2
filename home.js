@@ -37,21 +37,9 @@ document.getElementById("abthree").addEventListener("mouseenter", function(){
     
 });
 document.getElementById("abthree").addEventListener("mouseleave", function(){
-    document.getElementById("abthree").style.height = 125+"px";
+    document.getElementById("abtwo").style.height = 125+"px";
     document.getElementById("abthree").style.height = 125+"px";
 });
-
-function coolcheck(){
-    let x1 = document.getElementById("abone").style.height;
-    let x2 = document.getElementById("abtwo").style.height;
-    let x3 = document.getElementById("abthree").style.height;
-
-    if(x1+x2+x3 <375){
-        document.getElementById("abone").style.height = 125+"px";
-        document.getElementById("abtwo").style.height = 125+"px";
-        document.getElementById("abthree").style.height = 125+"px";
-    }
-}
 
 setInterval(coolcheck, 1000);
 
