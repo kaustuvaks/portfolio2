@@ -66,7 +66,7 @@
                                 <circle class="iconic-clock-second-hand-axis" fill="#D53A1F" cx="192" cy="192" r="4.5"/>
                             </g>
                             <defs>
-                              <animateTransform
+                            <animateTransform
                                     type="rotate"
                                     fill="remove"
                                     restart="always"
@@ -80,9 +80,9 @@
                                     from="0 192 192"
                                     attributeName="transform"
                                     attributeType="xml">
-                              </animateTransform>
-                          
-                              <animateTransform
+                            </animateTransform>
+                        
+                            <animateTransform
                                     type="rotate"
                                     fill="remove"
                                     restart="always"
@@ -96,9 +96,9 @@
                                     from="0 192 192"
                                     attributeName="transform"
                                     attributeType="xml">
-                              </animateTransform>
-                          
-                              <animateTransform
+                            </animateTransform>
+                        
+                            <animateTransform
                                     type="rotate"
                                     fill="remove"
                                     restart="always"
@@ -112,7 +112,7 @@
                                     from="0 192 192"
                                     attributeName="transform"
                                     attributeType="xml">
-                              </animateTransform>
+                            </animateTransform>
                             </defs>
                             <script  type="text/javascript">
                             <![CDATA[
@@ -121,16 +121,16 @@
                                 var minutes = date.getMinutes();
                                 var hours = date.getHours();
                                 hours = (hours > 12) ? hours - 12 : hours;
-                          
+                        
                                 minutes = (minutes * 60) + seconds;
                                 hours = (hours * 3600) + minutes;
-                          
+                        
                                 document.querySelector('.iconic-clock-second-hand').setAttribute('transform', 'rotate('+360*(seconds/60)+',192,192)');
                                 document.querySelector('.iconic-clock-minute-hand').setAttribute('transform', 'rotate('+360*(minutes/3600)+',192,192)');
                                 document.querySelector('.iconic-clock-hour-hand').setAttribute('transform', 'rotate('+360*(hours/43200)+',192,192)');
                             ]]>
                             </script>
-                          </svg>
+                        </svg>
 
                         <h3 class=" text-white"><span id="time"> </span></h3>
                     </div>
@@ -373,7 +373,7 @@
                                 <br/>
                                 <div class="text-left h6 ">
                                     The PCAP certification covers topics such as Python syntax, data types, and control structures,
-                                     as well as more advanced topics such as object-oriented programming, exceptions, and modules.
+                                    as well as more advanced topics such as object-oriented programming, exceptions, and modules.
                                 </div>
                             </div>
                         </div>
@@ -423,7 +423,7 @@
         </div>
     </section>
 
-    <div id="projects-header" class="callout proj"> 
+    <div id="projects-header" class="callout abme"> 
         <div class="vert-text"> 
             <h1>A few things about me.</h1> 
         </div> 
@@ -498,69 +498,69 @@
 
     </section>
 
-    <section class="contact bg-black pt-3 mb-5" id="contact" style="height:fit-content;background-color:#212329">
-        <div class="max-width">
-            <h2><p class="text-white">Contact me</p>></h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="text-white"><h2>About Me</h2></div>
-                    <p class="text-white">Team player with strong oral and written communication skills and an analytical and
-                        problem solving attitude. I have a passion for metrics and dedication for beating
-                        and "best - yets".</p>
-                        <div class="icons">
-                            <div class="row">
-                                <i class="fas fa-user"></i>
-                                <div class="info">
-                                    <div class="head text-white">Name</div>
-                                    <div class="sub-title text-white">Kaustuva kumar Sahu</div>
+    <section class="contact bg-black" id="contact" style="height:fit-content; background-color:#212329" id="contact">
+        <div class="container">    
+            <div class="row">
+                <h2 class="max-width"><p class="text-center h1 display-4 text-white">Get in touch with me</p></h2>
+            </div>
+            <br><br>
+            <div class="d-flex align-items-center justify-content-around gapcs">
+                <div class="form-group">
+                    <form id="contact-form" class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <textarea class="form-control" rows="3" placeholder="MESSAGE" name="message" required></textarea>
+                        </div>
+                        <div class="col-lg-12">
+                            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                                <div class="alt-send-button">
+                                    <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div class="info">
-                                    <div class="head text-white">Address</div>
-                                    <div class="sub-title text-white">Puri , Odisha , India</div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <i class="fas fa-envelope"></i>
-                                <div class="info">
-                                    <div class="head text-white">Email</div>
-                                    <div class="sub-title text-white">kaustuvaks@gmail.com</div>
-                                </div>
-                            </div>
-                        <div class="row">
-                            <i class="fa fa-phone"></i>
-                            <div class="info">
-                                <div class="head text-white">WhatsApp/Phone</div>
-                                <div class="sub-title text-white">+91-7327929887</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column right">
-                    <div class="text"><p class="text-white">Contact me</p></div>
-                    <form action="https://formspree.io/f/xjvzrylw" method="POST">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" placeholder="Name" name="Sender" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" placeholder="email" name="Sender-email" required>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" name="Subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." name="Content" required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit">Send</button>
+                            </button>
                         </div>
                     </form>
                 </div>
-            </div>
+                
+                <!-- Left contact page --> 
+                
+                <div class="direct-contact-container">
+            
+                    <ul class="contact-list">
+                        <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place"><a href="https://www.google.com/maps/d/u/0/edit?mid=1m-g0Lb3emEkY9X7gW7bxBcl5u9JQnSo&usp=sharing">Puri, Odisha</a></span></i></li>
+                        <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:+91-7327929887" title="Give me a call">+91-732-792-9887</a></span></i></li>
+                        <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:kaustuvaks@gmail.com" title="kaustuvas@gmail.com">kaustuvaks@gmail.com</a></span></i></li>  
+                    </ul>
+                    <hr>
+                    <ul class="social-media-list">
+                        <li>
+                            <a href="#" target="_blank" class="contact-icon">
+                            <i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" class="contact-icon">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" class="contact-icon">
+                            <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/kaustuvaks" target="_blank" class="contact-icon">
+                            <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>       
+                    </ul>
+                    <hr>
+                </div>
+            </div> 
         </div>
     </section>
     
