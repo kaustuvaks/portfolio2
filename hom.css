@@ -13,6 +13,7 @@ html{
     text-decoration: none;
 }
 
+
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -71,6 +72,16 @@ html{
     background-position: center center;
 }
 
+.callout.abme {
+    background: url(./images/codimg.webp);
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 
 
 .proj {
@@ -515,7 +526,7 @@ section{
     height: fit-content;
     padding:20px;
     min-height: 115vh;;
-    background-color:#d4d4d5;
+    background-color:#f1f1f1;
 }
 .projects .project-content{
     display: grid;
@@ -559,8 +570,16 @@ section{
     margin-top:20px;
 }
 
-.cources{
+.courses{
     background-color:#b3b3b3;
+    height:fit-content
+}
+
+.course .course-image{
+    flex:3
+}
+.course .course-description{
+    flex:7
 }
 
 .about-me-two{
