@@ -16,6 +16,10 @@ html{
 .gapcs{
     gap: 0em;
 }
+
+.display-none{
+    display: none;
+}
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;

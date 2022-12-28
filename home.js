@@ -1,6 +1,12 @@
 var prevScrollpos = window.pageYOffset;
 navbar_height = document.querySelector('.navbar').offsetHeight;
 let hamburgerClicked = false;
+let maxWidth = screen.width;
+
+
+    if(maxWidth < 440){
+        document.getElementById("nav-scroll").style.width = maxWidth+"px";
+    }
 
 function refreshTime() {
     const timeDisplay = document.getElementById("time");
@@ -12,7 +18,6 @@ setInterval(refreshTime, 1000);
 
 const button = document.getElementById('hamburger');
 button.addEventListener("click", function openNav(){
-    let maxWidth = screen.width;
     if(maxWidth<501){
         document.getElementById("mySidenav").style.width = maxWidth+"px";
     }else{
