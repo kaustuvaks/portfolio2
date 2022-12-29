@@ -4,6 +4,8 @@ let hamburgerClicked = false;
 let maxWidth = screen.width;
 let maxOffsetWidth = window.offsetWidth;
 
+$('body').bind('touchstart', function() {});
+
 
 if(maxWidth < 440){
     document.getElementById("nav-scroll").style.width = (maxWidth)+"px";
