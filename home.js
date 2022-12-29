@@ -4,8 +4,22 @@ let hamburgerClicked = false;
 let maxWidth = screen.width;
 let maxOffsetWidth = window.offsetWidth;
 
+const matricDisplay = document.getElementById("matric");
+const intermediateDisplay = document.getElementById("intermediate");
+const undergraduateDisplay = document.getElementById("graduation");
+
 $('body').bind('touchstart', function() {});
 
+if(maxWidth > 1000){
+
+    var build_classes = document.getElementsByClassName(".builds.hid");
+
+    for(const build_class of build_classes){
+        console.log(build_class);
+        build_class.classList.remove("card-body");
+        build_class.classList.add("build");
+    }
+}
 
 if(maxWidth < 440){
     document.getElementById("nav-scroll").style.width = (maxWidth)+"px";
@@ -15,35 +29,53 @@ document.getElementById("abone").addEventListener("mouseenter", function(){
     document.getElementById("abone").style.height = 187.5+"px";
     document.getElementById("abtwo").style.height = 62.5+"px";
     
+    const matricS = "2006 - 2016 \nSecured 92.17%.";
+    matricDisplay.textContent = matricS;
+
 });
 document.getElementById("abone").addEventListener("mouseleave", function(){
     document.getElementById("abone").style.height = 125+"px";
     document.getElementById("abtwo").style.height = 125+"px";
+
+    const matricS = "";
+    matricDisplay.textContent = matricS;
 });
 
 document.getElementById("abtwo").addEventListener("mouseenter", function(){
     document.getElementById("abone").style.height = 93.75+"px";
     document.getElementById("abtwo").style.height = 187.5+"px";
     document.getElementById("abthree").style.height = 93.75+"px";
+
+    const intermediateS = "2016 - 2018 \nSecured 61.87%.";
+    intermediateDisplay.textContent = intermediateS;
     
 });
 document.getElementById("abtwo").addEventListener("mouseleave", function(){
     document.getElementById("abone").style.height = 125+"px";
     document.getElementById("abtwo").style.height = 125+"px";
     document.getElementById("abthree").style.height = 125+"px";
+
+    const intermediateS = "";
+    intermediateDisplay.textContent = intermediateS;
 });
 
 document.getElementById("abthree").addEventListener("mouseenter", function(){
     document.getElementById("abthree").style.height = 187.5+"px";
     document.getElementById("abtwo").style.height = 62.5+"px";
+
+    const gradS = "2019 - present \nElectrical Engineering minors in \nComputer Science.\nSecured 8.1GPA(till date)."
+    undergraduateDisplay.textContent = gradS;
     
 });
 document.getElementById("abthree").addEventListener("mouseleave", function(){
     document.getElementById("abtwo").style.height = 125+"px";
     document.getElementById("abthree").style.height = 125+"px";
+
+    const gradS = ""
+    undergraduateDisplay.textContent = gradS;
 });
 
-setInterval(coolcheck, 1000);
+// setInterval(coolcheck, 1000);
 
 function refreshTime() {
     const timeDisplay = document.getElementById("time");
@@ -96,9 +128,9 @@ function hiding(){
 }
 
 
-document.querySelector('#contact-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    e.target.elements.name.value = '';
-    e.target.elements.email.value = '';
-    e.target.elements.message.value = '';
-  });
+// document.querySelector('#contact-form').addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     e.target.elements.name.value = '';
+//     e.target.elements.email.value = '';
+//     e.target.elements.message.value = '';
+//   });
