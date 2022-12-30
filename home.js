@@ -26,8 +26,8 @@ if(maxWidth < 440){
 }
 
 document.getElementById("abone").addEventListener("mouseenter", function(){
-    document.getElementById("abone").style.height = 187.5+"px";
-    document.getElementById("abtwo").style.height = 62.5+"px";
+    document.getElementById("abone").style.height = 157.5+"px";
+    document.getElementById("abtwo").style.height = 112.5+"px";
     
     const matricS = "2006 - 2016 \nSecured 92.17%.";
     matricDisplay.textContent = matricS;
@@ -42,9 +42,9 @@ document.getElementById("abone").addEventListener("mouseleave", function(){
 });
 
 document.getElementById("abtwo").addEventListener("mouseenter", function(){
-    document.getElementById("abone").style.height = 93.75+"px";
-    document.getElementById("abtwo").style.height = 187.5+"px";
-    document.getElementById("abthree").style.height = 93.75+"px";
+    document.getElementById("abone").style.height = 115+"px";
+    document.getElementById("abtwo").style.height = 145+"px";
+    document.getElementById("abthree").style.height = 115+"px";
 
     const intermediateS = "2016 - 2018 \nSecured 61.87%.";
     intermediateDisplay.textContent = intermediateS;

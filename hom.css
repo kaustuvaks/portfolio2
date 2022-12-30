@@ -13,6 +13,11 @@ html{
     text-decoration: none;
 }
 
+video{
+    width: 100%;
+    height: auto;
+}
+
 .gapcs{
     gap: 0em;
 }
@@ -73,6 +78,7 @@ html{
     height:300px;
     width:300px;
 }
+
 .callout.proj {
     background: url(./images/codimg.webp);
     background-attachment: fixed;
@@ -96,7 +102,7 @@ html{
 }
 
 .callout.abme {
-    background: url(./images/codimg.webp);
+    background: url(./images/prlx4.webp);
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -630,6 +636,11 @@ section{
 .education{
     height:fit-content;
     padding-bottom: 40px;
+}
+
+.intro{
+    background-color: #A3B8CC;
+    height:fit-content;
 }
 
 .about-me-two{
