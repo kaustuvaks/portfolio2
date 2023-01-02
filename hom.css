@@ -276,6 +276,7 @@ section{
     height:100vh;
 
     scroll-snap-align: center;
+    z-index: 1;
 }
 .parallax {
     /* The image used */
@@ -616,6 +617,7 @@ section{
 
 .builds{
     height: fit-content;
+    background-color: white;
 }
 
 .builds .build{
@@ -637,6 +639,7 @@ section{
 .education{
     height:fit-content;
     padding-bottom: 40px;
+    background-color: #A3B8CC;
 }
 
 .intro{
