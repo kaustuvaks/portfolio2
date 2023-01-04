@@ -617,21 +617,27 @@ section{
 
 .builds{
     height: fit-content;
+    min-height: 100vh;
     background-color: white;
 }
 
 .builds .build{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap:1em;
     height: 200px;
 }
 
-.build .card-image{
+.builds .hid{
+    display:flex;
+    flex-direction: row;
+}
+
+.builds .card-image{
     flex:4;
 }
 
-.build .card-exp{
+.builds .card-exp{
     flex:6;
     gap:1em;
 }
@@ -816,6 +822,13 @@ hr {
 }
 
 /* Begin Media Queries*/
+
+@media screen and (max-width:1020px) {
+    .builds .hid{
+        display:flex;
+        flex-direction: column;
+    }
+}
 @media screen and (max-width: 850px) {
     .contact-wrapper {
     display: flex;

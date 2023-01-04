@@ -10,16 +10,17 @@ const undergraduateDisplay = document.getElementById("graduation");
 
 $('body').bind('touchstart', function() {});
 
-if(maxWidth > 1000){
+// if(maxWidth < 1050){
 
-    var build_classes = document.getElementsByClassName(".builds.hid");
+//     var build_classes = document.getElementsByClassName(".hid");
+//     // console.log(build_classes)
 
-    for(const build_class of build_classes){
-        console.log(build_class);
-        build_class.classList.remove("card-body");
-        build_class.classList.add("build");
-    }
-}
+//     for(var build_class of build_classes){
+//         // console.log(build_class);
+//         build_class.classList.remove(".build");
+//         // build_class.classList.add("build");
+//     }
+// }
 
 if(maxWidth < 440){
     document.getElementById("nav-scroll").style.width = (maxWidth)+"px";
