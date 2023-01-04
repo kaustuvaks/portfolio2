@@ -280,7 +280,7 @@ section{
 }
 .parallax {
     /* The image used */
-    /* background-image: url("./images/mt-sample-background.webp"); */
+    background-image: url("./images/mt-sample-background.webp");
     
     /* Set a specific height */
     /* min-height: 500px;  */
